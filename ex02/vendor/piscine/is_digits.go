@@ -1,19 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.go                                            :+:      :+:    :+:   */
+/*   is_digits.go                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsakanou <nsakanou@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/24 13:48:59 by nsakanou          #+#    #+#             */
-/*   Updated: 2024/06/24 13:49:56 by nsakanou         ###   ########.fr       */
+/*   Created: 2024/06/24 13:23:51 by nsakanou          #+#    #+#             */
+/*   Updated: 2024/06/24 13:51:40 by nsakanou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-package main
+package piscine
 
-import "piscine"
+import "ft"
 
-func main() {
-	piscine.IsDigits()
+func IsDigits() {
+	for i:= '0'; i <= '9'; i++ {
+		ft.PrintRune(i)
+	}
+	ft.PrintRune('\n')
 }

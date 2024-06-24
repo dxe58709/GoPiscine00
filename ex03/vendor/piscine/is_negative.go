@@ -1,19 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.go                                            :+:      :+:    :+:   */
+/*   is_negative.go                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nsakanou <nsakanou@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/24 13:48:59 by nsakanou          #+#    #+#             */
-/*   Updated: 2024/06/24 13:49:56 by nsakanou         ###   ########.fr       */
+/*   Created: 2024/06/24 13:53:21 by nsakanou          #+#    #+#             */
+/*   Updated: 2024/06/24 13:55:26 by nsakanou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-package main
+package piscine
 
-import "piscine"
+import "ft"
 
-func main() {
-	piscine.IsDigits()
+func IsNegative(nb int) {
+	if nb < 0{
+		ft.PrintRune('T')
+	}else{
+		ft.PrintRune('F')
+	}
+	ft.PrintRune('\n')
 }

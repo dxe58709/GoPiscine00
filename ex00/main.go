@@ -1,13 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.go                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nsakanou <nsakanou@student.42tokyo.jp>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/06/24 13:23:58 by nsakanou          #+#    #+#             */
+/*   Updated: 2024/06/24 13:36:35 by nsakanou         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 package main
 
-import {
-	"ex00/vendor/ft"
-	"ex00/vendor/piscine"
-}
+import "piscine"
 
 func main() {
-	alphabet := piscine.GenerateAlphabet()
-    for _, char := range alphabet {
-        ft.PrintRune(char)
-    }
+	piscine.IsAlphabet()
 }

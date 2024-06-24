@@ -1,15 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.go                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: nsakanou <nsakanou@student.42tokyo.jp>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/06/24 13:44:53 by nsakanou          #+#    #+#             */
+/*   Updated: 2024/06/24 13:45:25 by nsakanou         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 package main
 
-func IsNegative(nb int) {
-	var output [2]byte
-	output[0] = 'F'
-	output[1] = 'T'
-
-	_ = output[nb>>31&1]
-}
+import "piscine"
 
 func main() {
-	IsNegative(1)
-	IsNegative(0)
-	IsNegative(-1)
+	piscine.IsNegative(1)
+	piscine.IsNegative(0)
+	piscine.IsNegative(-1)
 }
